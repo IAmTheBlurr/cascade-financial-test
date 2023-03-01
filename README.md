@@ -28,3 +28,7 @@ The main customer facing Cascade Financial page does not contain `data-testid` a
 If `data-testid` attributes were added to the elements, I would have used those instead of XPath.
 
 It is not uncommon for websites requiring automation to not have unique identifiers on elements; this is not a problem if using xpath, but attempting to use any other form of locator often leads to overly complex and difficult to maintain object location and selection means.
+
+### Recommendations to Assist Test Automation
+1. Use `data-testid` attributes on elements that are intended to be interacted with by automation
+2. Use unique class names on elements that are intended to be interacted with by automation
