@@ -23,7 +23,7 @@ If you don't want to use docker-compose you can run the following commands:
 2. `docker run -it --rm cascade-financial-test`
 
 ### GitHub Actions
-The action script is found in the `.github/workflows` directory.  It's intended to run on workflow_dispatch, but can be modified to run on push or pull_request.
+Not currently operational, work in progress :(
 
 ## A Note About Using XPath Over CSS Locators
 I chose to use XPath over CSS locators for this example project.  I've found that XPath is more reliable, and I've had less issues with it than I have with CSS locators.
