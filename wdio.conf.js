@@ -11,12 +11,6 @@ exports.config = {
     ],
     framework: 'mocha',
     reporters: ['spec'],
-    before: function() {
-        // Setup tasks here...
-    },
-    after: function() {
-        // Teardown tasks here...
-    },
     waitforTimeout: 5000,
     connectionRetryTimeout: 90000,
     services: ['selenium-standalone']
