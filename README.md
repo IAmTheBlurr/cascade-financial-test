@@ -17,6 +17,11 @@ To run with Docker, you'll need to have Docker installed.  I happen to be using 
 
 Simply run `docker-compose up` to run the tests.
 
+#### W/O Docker Compose
+If you don't want to use docker-compose you can run the following commands:
+1. `docker build -t cascade-financial-test .`
+2. `docker run -it --rm cascade-financial-test`
+
 ### GitHub Actions
 The action script is found in the `.github/workflows` directory.  It's intended to run on workflow_dispatch, but can be modified to run on push or pull_request.
 
