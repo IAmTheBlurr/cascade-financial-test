@@ -1,4 +1,4 @@
-const Page = require('./page')
+const Page = require('./Page')
 
 // noinspection JSCheckFunctionSignatures
 class HomePage extends Page {
