@@ -12,6 +12,5 @@ exports.config = {
     framework: 'mocha',
     reporters: ['spec'],
     waitforTimeout: 5000,
-    connectionRetryTimeout: 90000,
-    services: ['selenium-standalone']
+    connectionRetryTimeout: 90000
 }
