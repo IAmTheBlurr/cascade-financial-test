@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as a parent image
-FROM node:latest
+FROM ianwalter/puppeteer:latest
 
 # Set the working directory to /app
 WORKDIR /app
