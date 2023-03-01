@@ -19,3 +19,12 @@ Simply run `docker-compose up` to run the tests.
 
 ### GitHub Actions
 The action script is found in the `.github/workflows` directory.  It's intended to run on workflow_dispatch, but can be modified to run on push or pull_request.
+
+## A Note About Using XPath Over CSS Locators
+I chose to use XPath over CSS locators for this example project.  I've found that XPath is more reliable, and I've had less issues with it than I have with CSS locators.
+
+The main customer facing Cascade Financial page does not contain `data-testid` attributes on any elements, the class names are not unique, and the `id` attributes are not always unique.
+
+If `data-testid` attributes were added to the elements, I would have used those instead of XPath.
+
+It is not uncommon for websites requiring automation to not have unique identifiers on elements; this is not a problem if using xpath, but attempting to use any other form of locator often leads to overly complex and difficult to maintain object location and selection means.
